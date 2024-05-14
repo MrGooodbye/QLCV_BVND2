@@ -1,0 +1,25 @@
+.status{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    color: #fff;
+    &.empty{
+        background-color: rgb(163, 105, 34);
+    }
+    &.processing{
+        background-color: rgb(244, 39, 73);
+    }&.processed{
+        background-color: rgb(41, 137, 115);
+    }
+    &.expired{
+        background-color: #6c757d;
+    }
+}
+
+
+
+
+
+
+

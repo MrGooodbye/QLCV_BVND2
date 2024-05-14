@@ -1,0 +1,52 @@
+.status{
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    display: inline-block;
+    color: #fff;
+
+    &.wait{
+        background-color: #6c757d;
+    }
+    &.reject{
+        background-color: #dc3545;
+    }
+    &.edit{
+        background-color: #8540f5;
+    }
+    &.browse{
+        background-color: rgb(252, 80, 32);
+    }
+    &.move-up{
+        background-color: #0dcaf0;
+    }&.processing{
+        background-color: rgb(244, 39, 73);
+    }&.processed{
+        background-color: rgb(41, 137, 115);
+    }
+    // &.expired{
+    //     background-color: #6c757d;
+    // }
+}
+
+.btn{
+    &.btn-feedback{
+        background-color: #ff5722;
+        &.btn:focus {
+            outline: none;
+            box-shadow: rgba(230, 74, 25, 2);
+        }
+    }
+}
+
+.MuiTablePagination-selectLabel {
+    &.css-pdct74-MuiTablePagination-selectLabel{
+        margin-bottom: 0.7%;
+    }
+}
+
+.MuiTablePagination-displayedRows {
+    &.css-levciy-MuiTablePagination-displayedRows{
+        margin-bottom: 0.7%;
+    }
+}

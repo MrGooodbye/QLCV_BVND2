@@ -1,0 +1,40 @@
+.label-input-create-task{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    color: rgb(5, 5, 5);
+}
+
+.react-datepicker__current-month 
+{
+    &.react-datepicker__current-month--hasMonthYearDropdown
+    {
+        display: none;
+    }
+}
+
+.react-datepicker__month-year-dropdown-container 
+{
+    &.react-datepicker__month-year-dropdown-container--scroll
+    {
+        .react-datepicker__month-year-read-view
+        {
+            visibility: unset!important;
+            .react-datepicker__month-year-read-view--down-arrow
+            {
+                display: none;
+            }
+            .react-datepicker__month-year-read-view--selected-month-year
+            {
+                margin-top: 0;
+                color: #000;
+                font-weight: bold;
+                font-size: 0.944rem;
+            }
+        }
+        .react-datepicker__month-year-dropdown
+        {
+            width: 80%;
+            left: 10%;
+        }
+    }
+}

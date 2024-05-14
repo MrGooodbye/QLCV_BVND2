@@ -1,0 +1,142 @@
+.active{
+    color: #61dafb !important;
+}
+
+//chip
+.MuiChip-filled {
+    &.MuiChip-colorSecondary:hover{
+        background-color: rgb(245, 125, 179)!important;
+    }
+}
+
+.MuiChip-labelMedium{
+    font-size: 13px;
+    color: rgb(5, 5, 5);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.active-type-chip{
+    //rgb(214, 145, 170)
+    //rgb(238, 51, 135)
+    background-color: rgb(255, 51, 143)!important;
+    .MuiChip-labelMedium{
+        font-size: 13px;
+        color: rgb(255, 255, 240);
+        font-weight:lighter;
+        font-family: 'DM Sans', sans-serif;
+    }
+}
+
+.css-1r3mz6a-MuiButtonBase-root-MuiChip-root:hover{
+    background-color: rgb(225, 222, 237)!important;
+}
+
+.result-notification-title{
+    font-weight: bolder;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15.5px;
+    color: rgb(5, 5, 5);
+}
+
+.center-screen{
+    position: absolute;
+    top: 20vh;
+    margin-left: 0.60rem;
+    //left: 50%;
+    // margin-top: -50px;
+    // margin-left: -50px;
+}
+
+.notifiicon-bottom{
+    z-index: 2;
+    position: absolute;
+    right: 4%;
+    top: 78%;
+    border-radius: 0.45rem;
+    width: 360px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.30) 0px 5px 15px;
+
+    #notifiicon-bottom-box{
+        overflow-y: auto;
+        height: 92.2vh;
+    }
+
+    #notifiicon-bottom-box:active::-webkit-scrollbar-thumb,
+    #notifiicon-bottom-box:focus::-webkit-scrollbar-thumb,
+    #notifiicon-bottom-box:hover::-webkit-scrollbar-thumb
+    {
+        //visibility: hidden;
+        visibility: visible;
+    }   
+
+    #notifiicon-bottom-box::-webkit-scrollbar-thumb{
+        background-color: darkgrey;
+        visibility: hidden;
+        border-radius: 0.45rem;
+        height: 26vh;
+    }
+
+    #notifiicon-bottom-box::-webkit-scrollbar{
+        width: 6px;
+    }
+}
+
+//hover item in notifiicon bottom don't have component avt
+.css-bshv44-MuiButtonBase-root-MuiListItem-root:hover{
+    border-radius: 10px!important;
+    background-color: rgba(0, 0, 0, 0.1)!important;
+}
+
+//hover item in notifiicon bottom have component avt
+.css-1f57v5v-MuiButtonBase-root-MuiListItem-root:hover{
+    border-radius: 10px!important;
+    background-color: rgba(0, 0, 0, 0.1)!important;
+}
+
+.message-notifi{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+@media (min-width: 576px) { 
+
+ }
+
+// @media (max-width: 991.98px) { 
+//     #skeleton {
+//         //n tượng trưng cho cấp số cộng 3n (=) 3 + 3 tăng dần lên
+//         .MuiBox-root:nth-child(1n + 10){
+//             display: none;
+//             // background-color: red;
+//         }
+//     }
+// }
+
+//   // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1199.98px) {
+//     #skeleton {
+//         //n tượng trưng cho cấp số cộng 3n (=) 3 + 3 tăng dần lên
+//         .MuiBox-root:nth-child(1n + 10){
+//             display: none;
+//             // background-color: red;
+//         }
+//     }
+// }
+
+// @media (min-width: 1200px) { 
+//     #notifiicon-bottom-box{
+//         overflow-y: hidden!important;
+//     }
+//     #skeleton {
+//         //n tượng trưng cho cấp số cộng 3n (=) 3 + 3 tăng dần lên
+//         .MuiBox-root:nth-child(1n){
+//             margin-top: 5px;
+//             //display: none;
+//             //background-color: red;
+//             //overflow-y:visible;
+//         }
+//     }
+// }

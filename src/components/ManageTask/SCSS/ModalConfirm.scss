@@ -1,0 +1,5 @@
+.modal-confirm {
+    &.modal-dialog-centered{
+        min-height: calc(100% - 15rem)!important;
+    }
+}

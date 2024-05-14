@@ -1,0 +1,142 @@
+.modal-md{
+    max-width: none!important;
+    width: 55%!important;
+    margin-top: 0px!important;
+}
+
+.responsive-screen-body-modal{
+    overflow-y: auto;
+    .responsive-screen-body-modal:active::-webkit-scrollbar-thumb,
+    .responsive-screen-body-modal:hover::-webkit-scrollbar-thumb,
+    .responsive-screen-body-modal:focus::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+
+    .responsive-screen-body-modal::-webkit-scrollbar-thumb{
+        background-color: red;
+        visibility: hidden;
+        border-radius: 0.45rem;
+        height: 26vh;
+    }
+
+    .responsive-screen-body-modal::-webkit-scrollbar{
+        width: 6px;
+    } 
+}
+
+.list-title{
+    background: linear-gradient(90deg, rgb(255, 134, 249) 100%, rgba(250, 0, 135, 1) 100%); //5
+    border-radius: .5rem!important;
+    [contenteditable]:focus {
+        outline: 0px solid transparent;
+    }
+    &::before{
+        display: none;
+    }   
+
+    .list-children-task{
+        background-color: #fff;
+    }
+
+    .discuss-show{
+        height: 350px;
+        overflow-y: auto;
+    }
+
+    .task-discuss{
+        border-top: 1.8px solid silver;
+        height: auto;
+
+        .discuss-box{
+            border: 0px solid gray;
+            border-radius: 20px;
+            padding: 2px 13px 2px 13px;
+            word-break: break-all;
+            background-color: rgb(230, 231, 233);
+
+            .dissucss-content{
+                .MuiListItemText-primary{
+                    font-weight: 650!important;
+                    font-size: 14.5px;
+                    line-height: 1.25!important;
+                }
+                .MuiListItemText-secondary{
+                    font-family: "Segoe UI", Arial, sans-serif!important;
+                    font-size: 14.5px;
+                    color: #212529;
+                }
+            }
+        }
+
+        .task-discuss-input{
+            border: 1px solid silver;
+            border-radius: 22px;
+            position: relative;
+            height: auto;
+            margin-top: 0.65rem!important;
+         
+            .input-area{
+                padding: 10px 0px 11px 15px;
+                width: 95%;  
+                font-size: 17px;
+                color: rgb(5, 5, 5);
+            }            
+        }
+
+        .discuss-time-send{
+            color: rgb(101, 103, 107);
+            position: relative;
+            left: 60px;
+            font-size: 14px;
+        }
+    }
+}
+
+.selected-file-preview-item-info-label{
+    width: 65%;
+}
+
+.task-discuss-input:focus-within{
+    outline: 2px solid rgb(237, 64, 87);  
+    //outline: 2px solid rgb(255, 15, 107);  
+}
+
+.child-1[aria-label]:not([aria-label=""]):empty::before{
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    content: attr(aria-label);
+    cursor: text;
+}  
+
+.list-title:nth-child(5n + 1){
+    background: linear-gradient(190deg, rgba(103, 189, 166, 0.8) 100%, rgba(216,248,79,0.2) 100%); //1
+}
+
+.list-title:nth-child(5n + 2){
+    background: linear-gradient(106deg, rgba(40, 65, 255, 0.6) 0%, rgba(66,93,159,0.6) 100%); //2
+}
+
+.list-title:nth-child(5n + 3){
+    background: linear-gradient(59deg, rgba(255, 64, 0, 0.5) 100%, rgba(189,182,163,0)); //3
+}
+
+.list-title:nth-child(5n + 4){
+    background: linear-gradient(90deg, rgba(20, 159, 255, 1) 0%, rgba(17, 122, 255, 1) 100%); //4
+}
+
+.modal-assign{
+    top: 22px;
+}
+
+@media screen and (min-width: 1900px) { 
+    .responsive-screen-body-modal{
+        height: 720px;
+    }
+}
+
+@media screen and (min-width: 1055.98px) and (max-width: 1699.98px) {
+    .responsive-screen-body-modal{
+        height: 545px!important;
+        background-color: red;
+    }
+}

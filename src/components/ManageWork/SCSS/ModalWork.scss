@@ -1,0 +1,103 @@
+.task-text-processing{
+    color: #03a9f4;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.task-text-due-date{
+    color: Orange;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.task-text-expired{
+    color: red;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.task-text-completed{
+    color: seagreen;
+    font-size: 1rem;
+    line-height: 1.75;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+
+.task-discuss{
+    border-top: 1.8px solid silver;
+    border-bottom: 1.8px solid silver;
+
+    .discuss-show{
+        height: 330px;
+        overflow-y: auto;
+    }
+
+    .discuss-box{
+        border: 0px solid gray;
+        border-radius: 20px;
+        padding: 2px 13px 2px 13px;
+        word-break: break-all;
+        background-color: rgb(230, 231, 233);
+
+        .dissucss-content{
+            .MuiListItemText-primary{
+                font-weight: 650!important;
+                font-size: 14.5px;
+                line-height: 1.25!important;
+            }
+            .MuiListItemText-secondary{
+                font-family: "Segoe UI", Arial, sans-serif!important;
+                font-size: 14.5px;
+                color: #212529;
+            }
+        }
+    }
+
+    .empty-comment{
+        margin: auto;
+        margin-top: 1px;
+        width: 23%;
+    }
+
+    .task-discuss-input{
+        border: 1px solid silver;
+        border-radius: 22px;
+        position: relative;
+        height: auto;
+        margin-top: 0.40rem!important;
+     
+        .input-area{
+            padding: 10px 0px 11px 15px;
+            width: 95%;  
+            font-size: 17px;
+            color: rgb(5, 5, 5);
+        }            
+    }
+
+    .discuss-time-send{
+        color: rgb(101, 103, 107);
+        position: relative;
+        left: 60px;
+        font-size: 14px;
+        padding: 0px;
+    }
+}
+
+.task-discuss-input:focus-within{
+    outline: 2px solid rgb(237, 64, 87);  
+    //outline: 2px solid rgb(255, 15, 107);  
+}
+
+.child-1:focus-visible{
+    outline: none;
+}
+
+.child-1[aria-label]:not([aria-label=""]):empty::before{
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    content: attr(aria-label);
+    cursor: text;
+}
